@@ -33,10 +33,10 @@ app.use("/product", productRoutes);
 app.use("/transaction", transactionRoutes);
 
 __dirname = path.join(__dirname,'../');
-app.use(express.static(path.join(__dirname, '/client/dist')));
+app.use(express.static(path.join(__dirname, '/Client/dist')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+  res.sendFile(path.join(__dirname, 'Client', 'dist', 'index.html'));
 });
 
 /* MONGOOSE SETUP */
