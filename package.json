@@ -3,7 +3,7 @@
     "@types/node": "^20.10.5"
   },
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "node server/index.js",
     "build": "npm install --prefix server && npm install --prefix Client && npm run build --prefix Client"
   },
   "dependencies": {
