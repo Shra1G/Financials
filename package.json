@@ -5,5 +5,8 @@
   "scripts": {
     "start": "node server/index.js",
     "build": "npm install --prefix server && npm install --prefix Client && npm run build --prefix Client"
+  },
+  "dependencies": {
+    "yarn": "^1.22.21"
   }
 }
