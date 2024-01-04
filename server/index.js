@@ -32,8 +32,8 @@ app.use("/kpi", kpiRoutes);
 app.use("/product", productRoutes);
 app.use("/transaction", transactionRoutes);
 
-__dirname = path.join(__dirname,'../');
-app.use(express.static(path.join(__dirname, '/Client/dist')));
+const __prevDirname = path.join(__dirname,'../');
+app.use(express.static(path.join(__prevDirname, '/Client/dist')));
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'Client', 'dist', 'index.html'));
