@@ -2,10 +2,6 @@
   "devDependencies": {
     "@types/node": "^20.10.5"
   },
-  "dependencies": {
-    "mongoose": "^8.0.3",
-    "regression": "^2.0.1"
-  },
   "scripts": {
     "start": "node server/index.js",
     "build": "npm install --prefix server && npm install --prefix Client && npm run build --prefix Client"
