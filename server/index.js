@@ -45,7 +45,7 @@ mongoose
   .connect(process.env.MONGO_URL, {
   })
   .then(async () => {
-    app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
+    app.listen(PORT, () => console.log(`Connected to MongoDB and running on Server Port: ${PORT}`));
 
     await mongoose.connection.db.dropDatabase();
     KPI.insertMany(kpis);
