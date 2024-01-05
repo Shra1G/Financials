@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm install && npm run build",
-  "outputDirectory": "client/dist",
+  "outputDirectory": "dist",
   "framework": "vite",
   "rewrites": [{ "source": "/server/(.*)", "destination": "/server/index.js" }]
 }
